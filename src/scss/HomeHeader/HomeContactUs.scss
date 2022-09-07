@@ -1,0 +1,44 @@
+.contactUsMainContainer{
+    display: flex;
+    width: 1900px;
+    background-image: url(../../assets/Background-Contact-Form.jpg);
+    background-size: cover;
+    height: 980px;
+    margin-top:150px;
+}
+.contactUsMainSection{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    align-items:flex-end;
+    margin-right: 135px;
+}
+.contactUsMainSection p{
+    font-size: 38px;
+}
+.contactUsMainSection img{
+    width: 253px;
+    height: 33px;
+}
+form{
+    width:528px;
+    height: 327px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+input{
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: black;
+}
+form span{
+    font-size:16px;
+    font-weight: bold;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+}

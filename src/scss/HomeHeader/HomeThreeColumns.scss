@@ -1,0 +1,43 @@
+.homeThreeColumnsContainer{
+    display: flex;
+    background-image: url("../../assets/3\ Columns\ Background.png");
+    height: 384px;
+    justify-content: space-evenly;
+    align-items: center;
+    width:1900px;
+}
+.columnsCounter{
+    font-size: 90px;
+}
+.columnsShortText{
+    font-size:18px;
+}
+.columnsLongText{
+    font-size:16px;
+    font-family: 'Merriweather', sans-serif;
+    
+}
+.firstColumnContainer{
+    display: flex;
+    height: 252px;
+    max-width: 334px;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.secondColumnContainer{
+    display: flex;
+    height: 252px;
+    max-width: 334px;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.thirdColumnContainer{
+    display: flex;
+    height: 252px;
+    max-width: 334px;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}

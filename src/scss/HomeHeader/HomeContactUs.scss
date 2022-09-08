@@ -1,16 +1,19 @@
 .contactUsMainContainer{
     display: flex;
+    align-items: center;
     width: 1900px;
+    height: 1026px;
     background-image: url(../../assets/Background-Contact-Form.jpg);
     background-size: cover;
-    height: 980px;
-    margin-top:150px;
+    margin-top:80px;
 }
 .contactUsMainSection{ 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-content: center;
     width: 100%;
-    
+   
     align-items:flex-end;
     margin-right: 135px;
 }

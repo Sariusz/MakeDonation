@@ -1,3 +1,5 @@
+@import "../settings/fonts.scss";
+@import "../settings/colors.scss";
 .HomeFourStepsContainer {
   width: 1900px ;
 
@@ -18,7 +20,7 @@
 }
 .HomeFourStepsContainer2 {
   width: 100%;
-  background-color: #f0f1f1;
+  background-color: $silver;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,11 +69,11 @@
   border: 0.75px solid #3c3c3c;
   width: 310px;
   height: 120px;
-  background-color: white;
+  background-color:white;
   text-align: center;
   cursor: pointer;
   font-size: 36px;
-  font-family: Open Sans, sans-serif;
-  color: #3c3c3c;
+  font-family: $font-base;  
+  color: $black;
   margin-top: 30px;
 }

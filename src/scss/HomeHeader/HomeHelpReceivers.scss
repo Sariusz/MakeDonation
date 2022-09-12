@@ -1,3 +1,5 @@
+@import "../settings/fonts.scss";
+@import "../settings/colors.scss";
 .HelpReceiversMainContainer {
     margin-top:20px;
     text-align: center;
@@ -28,7 +30,7 @@
 .TopContainerButtons{
     font-size: 24px;
     font-weight: 400;
-    color:#3C3C3C;
+    color:$black;
     width:300px;
     height: 79px;
     padding:0;
@@ -61,20 +63,20 @@
 }
 .HelpReceiversList li p:first-of-type{
     font-size: 26px;
-    font-family: 'Merriweather', sans-serif;
-    color:#3C3C3C;
+    font-family: $font-alt;
+    color:$black;
     text-align: start;
 }
 .HelpReceiversGoal {
     font-size: 18px;
-    font-family: 'Merriweather', sans-serif;
-    color: #3C3C3C;
+    font-family: $font-base;
+    color: $black;
     align-self: flex-start;
 }
 .HelpReceiversItems {
     font-size: 18px;
-    font-family: 'Merriweather', sans-serif;
-    color: #3C3C3C;
+    font-family: $font-alt;
+    color:$black;
 }
 .paginationBttns{
     display: flex;

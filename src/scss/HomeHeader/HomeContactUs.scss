@@ -1,3 +1,5 @@
+@import "../settings/fonts.scss";
+@import "../settings/colors.scss";
 .contactUsMainContainer{
     display: flex;
     justify-content: flex-end;
@@ -36,7 +38,7 @@ form{
 input{
     outline: 0;
     border-width: 0 0 1px;
-    border-color: black;
+    border-color:$black;
     text-decoration: none;
     margin-bottom: 5px;
     margin-top:15px; 
@@ -51,7 +53,7 @@ form label {
     flex-direction: column;
 }
 .contactUsMainSection .uiErrorMessage{
-    color: red;
+    color:red;
     font-size:12px;
     font-weight: bold;  
 

@@ -1,4 +1,5 @@
-
+@import "../settings/fonts.scss";
+@import "../settings/colors.scss";
 .HeaderLogOutElementsContainer{
     display: flex;
     flex-direction: column;
@@ -13,7 +14,7 @@
     font-size: 18px;
         border: none;
         background-color: white;
-        font-family: "Open Sans", sans-serif;
+        font-family:$font-base;
         border: 0.75px transparent;
         width: 150px;
         height: 50px;
@@ -21,7 +22,7 @@
         cursor:pointer;
 }
 .HeaderLogOutButtonContainer button:hover {
-    border: 0.75px solid #3C3C3C;
+    border: 0.75px solid $black;
     margin: top 0 left 0 right 0 bottom 0;
     width: 150px;
     height: 50px;

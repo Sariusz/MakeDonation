@@ -8,11 +8,32 @@ const url = "https://fer-api.coderslab.pl/v1/portfolio/contact";
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [sentMessage, setSentMessage] = useState("");
-  const [error, setError] = useState(null);
-  
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+    const validate = () => {
+      const errors = {};
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+      if (!name) {
+        errors.name = "Wpisz imię!";
+      } else if (name.indexOf(' ') >= 0) {
+        errors.name = "Imię powinno być jednym wyrazem!"
+      }
+      if (!email) {
+        errors.email = "Wpisz email!";
+      } else if (!regex.test(email)) {
+        errors.email = "To nie jest prawidłowy format email!";
+      }
+      if (!message) {
+        errors.message = "Napisz wiadomość!";
+      }else if (message.length <= 120) {
+        errors.message = "Wiadomość musi zawierać co najmniej 120 znaków!";
+      }
+      return errors;
+    };
   let handleSubmit = async (e) => {
     e.preventDefault();
-    
+    setFormErrors(validate(name, email, message));
+    setIsSubmit(true);
     try {
       let res = await fetch(url, {
         method: "POST",
@@ -22,57 +43,31 @@ const url = "https://fer-api.coderslab.pl/v1/portfolio/contact";
         body: JSON.stringify({
           name: name,
           email: email,
-          message: message //zrobic json.stringify 
+          message: message
         }),
       });
-       
+    
       if (res.status === 200) {
         setName("");
         setEmail("");
         setMessage("");
-        setSentMessage("Wiadomość została wysłana! Wkrótce się skontaktujemy.");
+        setSentMessage(`Wiadomość została wysłana! Wkrótce się skontaktujemy.`);
       } else {
-        setSentMessage("Coś poszło nie tak.");
+        setSentMessage("");
       }
     } catch (err) {
       console.log(err);
     }
   };
   
- /*
-  function onChangeUsername(e) {
-    setUsername(e.target.value);
-  }
-  function onChangeEmail(e) {
-    setEmail(e.target.value);
-  }
-  function onChangeMessage(e) {
-   setMessage(e.target.value)
- }
-function onSubmit(e) {
-  e.preventDefault();
-  localStorage.setItem("username", username);
-  localStorage.setItem("email", email);
-  localStorage.setItem("message", message);
-  }
-  const handleClick = () => {
-  
-}
-
-  localStorage.clear();
-  /*function onGetData() {
-    if (onSubmit) {
-      console.log(localStorage.getItem("username"));
-      console.log(localStorage.getItem("email"));
-      console.log(localStorage.getItem("message"));
-      localStorage.clear()
-    }
-  }*/
     return (
       <div id="contactUs" className="contactUsMainContainer">
         <div className="contactUsMainSection">
           <p>Skontaktuj się z nami</p>
           <img src={decoration}></img>
+          <div className="sentMessage">
+            {sentMessage ? <p>{sentMessage}</p> : null}
+          </div>
           <form onSubmit={handleSubmit}>
             <div>
               <label>
@@ -86,9 +81,11 @@ function onSubmit(e) {
                   onChange={(e) => {
                     setName(e.target.value);
                   }}
+                  className={formErrors.name ? "errorInputStyle" : ""}
                 />
               </label>
             </div>
+            <p className="uiErrorMessage">{formErrors.name}</p>
             <div>
               <label>
                 <span className="inputHeader">Wpisz swój email</span>
@@ -99,26 +96,30 @@ function onSubmit(e) {
                   value={email}
                   id="email"
                   onChange={(e) => setEmail(e.target.value)}
+                  className={formErrors.email ? "errorInputStyle" : ""}
                 />
               </label>
             </div>
+            <p className="uiErrorMessage">{formErrors.email}</p>
             <div>
               <label>
                 <span className="inputHeader">Wpisz swoją wiadomość</span>
                 <input
                   type="textarea"
                   name="message"
-                  placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                  placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                   value={message}
                   id="message"
                   onChange={(e) => setMessage(e.target.value)}
+                  className={formErrors.message ? "errorInputStyle" : ""}
                 />
               </label>
             </div>
-            <button type="submit">Wyślij</button>
-            <div className="sentMessage">
-              {sentMessage ? <p>{sentMessage}</p> : null}
-            </div>
+            <p className="uiErrorMessage">{formErrors.message}</p>
+            <button type="submit" formnovalidate="formnovalidate">
+              Wyślij
+            </button>
           </form>
         </div>
       </div>

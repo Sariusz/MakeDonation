@@ -1,0 +1,63 @@
+.HomeHeaderLoginMainContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 1858px;
+    height: 946px;
+    align-items: center;
+}
+.HomeHeaderLoginMainContainer p {
+    font-size: 40px;
+    margin-top: 123px;
+}
+.HomeHeaderLoginMainContainer img{
+    padding-top: 25px;
+}
+.HeaderLoginSilverRectangle{
+    margin-top:60px;
+    width: 385px;
+    height: 235px;
+    background: #F0F1F1;
+    display: flex;
+    
+}
+.HeaderLoginSilverRectangle form{
+    height: 235px;
+    display: flex;
+    justify-content: center;
+        align-items: center;
+}
+.HeaderLoginSilverRectangle input{
+    background: #F0F1F1;
+    width: 250px;
+    border-bottom: 1px solid #707070;
+}
+.HeaderLoginSilverRectangle label{
+    display: flex;
+   justify-content: space-evenly;
+    height: 62px;
+}
+.HeaderLoginSilverRectangle label span:nth-of-type(1){
+    font-size: 16px;  
+}
+.HeaderLoginButtonsContainer{
+    width:500px;
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    
+}
+.HeaderLoginButtonsContainer button{
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    border: 0.75px transparent;
+    width: 117px;
+    height: 50px;
+}
+.HeaderLoginButtonsContainer button:hover{
+    border:0.75px solid #3C3C3C;
+    margin: top 0 left 0 right 0 bottom 0;
+    width: 117px;
+    height: 50px;
+}

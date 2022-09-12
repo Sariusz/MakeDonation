@@ -11,14 +11,14 @@ nav {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  padding-top: 37px;
   
   width: 100%;
    align-self: start;
+  
 }
 nav div {
   display: flex;
-  padding-bottom: 20px;
+  margin-right: 40px;
 }
 
 .HomeHeaderLoginButtons button {
@@ -26,10 +26,11 @@ nav div {
    background-color: white;
   border:0.75px transparent;
   color:#737373;
-  margin-right: 8px;
   width:90px;
   height:36px;
   cursor:pointer;
+  margin-top:46px;
+  
 }
 .HomeHeaderLoginButtons button:hover{
   border:  0.75px solid #FAD648 ; 
@@ -39,28 +40,31 @@ nav div {
   flex-direction: row;
   
 }
+
 .HomeHeaderLinkList li {
   font-size: 16px;
   background-color: white;
-  border: 0.75px transparent; 
+  border: 3px transparent; 
   color:#3C3C3C;
-   padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left:20px;
-  padding-right: 20px;
+  padding: 9px;
   height: 40px;
   cursor: pointer;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  
+}
+.HomeHeaderLinkList li:last-of-type{
+  margin-right:0;
 }
 .HomeHeaderLinkList li:hover{
   border: 0.75px solid #3C3C3C;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left:20px;
-  padding-right: 20px;
- 
-  
+ padding: 9px;
+  height: 40px;
+
 }
+
 .HomeHeaderMiddleText {
   width: 781px;
   margin-right: 100px;

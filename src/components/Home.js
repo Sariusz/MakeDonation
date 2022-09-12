@@ -9,13 +9,13 @@ import HomeThreeColumns from "./HomeThreeColumns";
 
 export const Home = () => {
   return (
-    <>
+    <div id="home">
       <HomeHeader></HomeHeader>
       <HomeThreeColumns></HomeThreeColumns>
       <HomeFourSteps></HomeFourSteps>
       <HomeAboutUs />
       <HomeHelpReceivers />
       <HomeContactUs></HomeContactUs>
-    </>
+    </div>
   );
 };

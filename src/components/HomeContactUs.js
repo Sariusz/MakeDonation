@@ -69,7 +69,7 @@ const url = "https://fer-api.coderslab.pl/v1/portfolio/contact";
             {sentMessage ? <p>{sentMessage}</p> : null}
           </div>
           <form onSubmit={handleSubmit}>
-            <div>
+            <div className="fieldContainer">
               <label>
                 <span className="inputHeader">Wpisz swoje imię</span>
                 <input
@@ -84,9 +84,9 @@ const url = "https://fer-api.coderslab.pl/v1/portfolio/contact";
                   className={formErrors.name ? "errorInputStyle" : ""}
                 />
               </label>
+              <p className="uiErrorMessage">{formErrors.name}</p>
             </div>
-            <p className="uiErrorMessage">{formErrors.name}</p>
-            <div>
+            <div className="fieldContainer">
               <label>
                 <span className="inputHeader">Wpisz swój email</span>
                 <input
@@ -99,27 +99,35 @@ const url = "https://fer-api.coderslab.pl/v1/portfolio/contact";
                   className={formErrors.email ? "errorInputStyle" : ""}
                 />
               </label>
+              <p className="uiErrorMessage">{formErrors.email}</p>
             </div>
-            <p className="uiErrorMessage">{formErrors.email}</p>
-            <div>
+            <div className="fieldContainerMessage">
               <label>
                 <span className="inputHeader">Wpisz swoją wiadomość</span>
                 <input
                   type="textarea"
                   name="message"
                   placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                   &#10;sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud &#10;
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                   value={message}
                   id="message"
                   onChange={(e) => setMessage(e.target.value)}
                   className={formErrors.message ? "errorInputStyle" : ""}
                 />
               </label>
+              <p className="uiErrorMessage">{formErrors.message}</p>
             </div>
-            <p className="uiErrorMessage">{formErrors.message}</p>
-            <button type="submit" formnovalidate="formnovalidate">
-              Wyślij
-            </button>
+
+            <div className="formSubmitContainer">
+              <button
+                type="submit"
+                formNoValidate="formnovalidate"
+                className="formSubmitButton"
+              >
+                Wyślij
+              </button>
+            </div>
           </form>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { HomeHeaderLeftSide} from "./HomeHeaderLeftSide";
 
 export const HomeHeader = () => {
     return (
-      <div className="HomeHeader__main--container" id="home">
+      <div className="HomeHeader__main--container">
         <HomeHeaderRightSide />
         <HomeHeaderLeftSide />
       </div>

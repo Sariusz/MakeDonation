@@ -1,34 +1,39 @@
+
 .contactUsMainContainer{
     display: flex;
-    align-items: center;
-    width: 1900px;
+    justify-content: flex-end;
+    max-width: 1900px;
     height: 1026px;
     background-image: url(../../assets/Background-Contact-Form.jpg);
     background-size: cover;
-    margin-top:80px;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    margin-top:150px;
 }
 .contactUsMainSection{ 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-   
-    align-items:flex-end;
+    width: 30%;
+    align-items:center;
     margin-right: 135px;
+    margin-bottom: 250px;
+    position: relative;
+    bottom:-170px;
 }
 .contactUsMainSection p{
     font-size: 38px;
+    padding-bottom: 25px;
+  
 }
 .contactUsMainSection img{
     width: 253px;
     height: 33px;
+    margin-bottom: 80px;
 }
 form{
     width:528px;
-    height: 327px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
 
 }
@@ -37,6 +42,9 @@ input{
     border-width: 0 0 1px;
     border-color: black;
     text-decoration: none;
+    margin-bottom: 5px;
+    margin-top:15px; 
+
 }
 form span{
     font-size:16px;
@@ -49,7 +57,7 @@ form label {
 .contactUsMainSection .uiErrorMessage{
     color: red;
     font-size:12px;
-    font-weight: bold;
+    font-weight: bold;  
 
 }
 .contactUsMainSection .sentMessage p{
@@ -60,5 +68,37 @@ form label {
 }
 .errorInputStyle{
     border-bottom: 1px solid red;
+
+}
+.fieldContainer{
+    height: 62px;
+    width: 200px;
+  
+}
+.fieldContainerMessage{
+    width: 528px;
+    height: 97px;
+    margin-top:20px;
+}
+.formSubmitContainer{
+    display: flex;
+    width:100%;
+    justify-content: flex-end;
+    margin-top: -20px;
+}
+.formSubmitButton{
+    width:150px;
+    height: 50px;
+    background-color:white;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    
+    
+}
+.formSubmitButton:hover {
+    width: 150px;
+    height: 50px;
+    border:0.75px solid #3C3C3C;
 
 }

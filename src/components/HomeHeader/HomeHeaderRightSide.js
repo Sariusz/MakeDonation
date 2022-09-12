@@ -84,7 +84,7 @@ export const HomeHeaderRightSide = () => {
                 to="contactUs"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={130}
                 duration={300}
                 onClick={closeMenu}
               >

@@ -1,6 +1,8 @@
 import React, {useState,useEffect} from 'react';
 import backgroundContact from "../assets/Background-Contact-Form.jpg";
 import decoration from "../assets/Decoration.svg";
+import facebook from "../assets/Facebook.svg";
+import instagram from "../assets/Instagram.svg";
 import "../scss/HomeHeader/HomeContactUs.scss";
 function HomeContactUs() {
 const url = "https://fer-api.coderslab.pl/v1/portfolio/contact";
@@ -129,6 +131,13 @@ const url = "https://fer-api.coderslab.pl/v1/portfolio/contact";
               </button>
             </div>
           </form>
+          <div className="contactFooter">
+            <p>Copyright by Coders Lab</p>
+            <div className='iconsContainer'>
+              <img src={facebook}></img>
+              <img src={instagram}></img>
+            </div>
+          </div>
         </div>
       </div>
     );

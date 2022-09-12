@@ -37,7 +37,7 @@ export const HomeHeaderRightSide = () => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={300}
+                duration={400}
                 onClick={closeMenu}
               >
                 Start
@@ -49,7 +49,7 @@ export const HomeHeaderRightSide = () => {
                 spy={true}
                 smooth={true}
                 offset={-200}
-                duration={300}
+                duration={400}
                 onClick={closeMenu}
               >
                 O co chodzi
@@ -61,7 +61,7 @@ export const HomeHeaderRightSide = () => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={300}
+                duration={400}
                 onClick={closeMenu}
               >
                 O nas{" "}
@@ -73,7 +73,7 @@ export const HomeHeaderRightSide = () => {
                 spy={true}
                 smooth={true}
                 offset={0}
-                duration={300}
+                duration={400}
                 onClick={closeMenu}
               >
                 Fundacja i organizacje
@@ -84,8 +84,8 @@ export const HomeHeaderRightSide = () => {
                 to="contactUs"
                 spy={true}
                 smooth={true}
-                offset={130}
-                duration={300}
+                offset={85}
+                duration={400}
                 onClick={closeMenu}
               >
                 Kontakt

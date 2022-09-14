@@ -44,7 +44,7 @@ function HomeHelpReceivers() {
         współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego
         potrzebują.
       </p>
-      {selectedButton == null ? <HomePaginateCharity/> :""}
+      {selectedButton == null ? <HomePaginateCharity /> : ""}
       {selectedButton == "Fundacjom" ? <HomePaginateCharity /> : null}
       {selectedButton == "Organizacjom pozarządowym" ? (
         <HomePaginateOrganizations />

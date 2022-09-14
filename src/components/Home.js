@@ -6,7 +6,6 @@ import HomeHelpReceivers from "./HomeHelpReceivers";
 import HomeContactUs from "./HomeContactUs";
 import HomeThreeColumns from "./HomeThreeColumns";
 
-
 export const Home = () => {
   return (
     <div id="home">

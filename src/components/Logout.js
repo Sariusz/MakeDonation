@@ -4,8 +4,9 @@ import logo from "../assets/Decoration.svg";
 import "../scss/HomeHeader/HomeLogin.scss";
 import "../scss/HomeHeader/HomeLogOut.scss";
 import { useNavigate } from "react-router-dom";
+
 export const Logout = () => {
-  const [click, setClick] = useState(false);
+  const [setClick] = useState(false);
   const closeMenu = () => setClick(false);
   let navigate = useNavigate();
   return (

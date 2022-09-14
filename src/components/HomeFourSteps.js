@@ -6,17 +6,17 @@ import icon1 from "../assets/Icon1.png";
 import icon2 from "../assets/Icon2.png";
 import icon3 from "../assets/Icon3.png";
 import { useNavigate } from "react-router-dom";
-function HomeFourSteps(props) {
+function HomeFourSteps() {
   let navigate = useNavigate();
   return (
     <div className="HomeFourStepsContainer" id="aboutWhat">
       <div className="HomeFourStepsContainer1">
         <p>Wystarczą 4 proste kroki</p>
-        <img src={decoration}></img>
+        <img src={decoration} alt="black-page-decoration"></img>
       </div>
       <div className="HomeFourStepsContainer2">
         <div className="HomeFourStepsContainer2--iconContainer">
-          <img src={icon}></img>
+          <img src={icon} alt="t-shirt-icon"></img>
           <p>Wybierz rzeczy</p>
           <p>
             ubrania, zabawki,
@@ -25,14 +25,14 @@ function HomeFourSteps(props) {
           </p>
         </div>
         <div className="HomeFourStepsContainer2--iconContainer">
-          <img src={icon1}></img>
+          <img src={icon1} alt="bag-icon"></img>
           <p>Spakuj je</p>
           <p>
             skorzystaj z<br /> worków na śmieci
           </p>
         </div>
         <div className="HomeFourStepsContainer2--iconContainer">
-          <img src={icon2}></img>
+          <img src={icon2} alt="looking-for-loupe-icon"></img>
           <p>
             Zdecyduj komu
             <br /> chcesz pomóc
@@ -44,7 +44,7 @@ function HomeFourSteps(props) {
           </p>
         </div>
         <div className="HomeFourStepsContainer2--iconContainer">
-          <img src={icon3}></img>
+          <img src={icon3} alt="order-courier-icon"></img>
           <p>Zamów kuriera</p>
           <p>
             kurier przyjedzie

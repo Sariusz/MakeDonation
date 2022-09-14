@@ -6,8 +6,7 @@ import decoration from "../../assets/Decoration.svg";
 import { useNavigate } from "react-router-dom";
 export const HomeHeaderRightSide = () => {
   let navigate = useNavigate();
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  const [setClick] = useState(false);
   const closeMenu = () => setClick(false);
 
   return (
@@ -97,7 +96,7 @@ export const HomeHeaderRightSide = () => {
       <div className="HomeHeaderMiddleText">
         <p>Zacznij pomagać!</p>
         <p> Oddaj niechciane rzeczy w zaufane ręce</p>
-        <img src={decoration}></img>
+        <img src={decoration} alt="black-page-decoration"></img>
         <div className="HomeHeaderButtons">
           <button
             onClick={() => {

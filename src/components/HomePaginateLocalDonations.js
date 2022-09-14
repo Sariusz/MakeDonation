@@ -1,8 +1,7 @@
 import React from "react";
-import ReactPaginate from "react-paginate";
 import { useState } from "react";
 
-function HomePaginateLocalDonations(props) {
+function HomePaginateLocalDonations() {
   // logic for localdonations' paginations
   const localDonationsArray = [];
   localDonationsArray.push(
@@ -57,11 +56,7 @@ function HomePaginateLocalDonations(props) {
     setlocalDonationsPageNumber(selected);
   };
 
-  return (
-    <ul className="HelpReceiversList">
-      {displayLocalDonations}
-    </ul>
-  );
+  return <ul className="HelpReceiversList">{displayLocalDonations}</ul>;
 }
 
 export default HomePaginateLocalDonations;

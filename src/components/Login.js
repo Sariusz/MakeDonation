@@ -4,7 +4,7 @@ import logo from "../assets/Decoration.svg";
 import "../scss/HomeHeader/HomeLogin.scss";
 import { useNavigate } from "react-router-dom";
 export const Login = () => {
-  const [click, setClick] = useState(false);
+  const [setClick] = useState(false);
   const closeMenu = () => setClick(false);
   let navigate = useNavigate();
   return (

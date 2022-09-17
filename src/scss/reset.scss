@@ -6,13 +6,14 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 10px;
     vertical-align: baseline;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
 body{
     font-family: $font-base;
+ 
 }
 footer, header, nav, section, main{
     display: block;

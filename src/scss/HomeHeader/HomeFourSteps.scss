@@ -1,79 +1,96 @@
 @import "../settings/fonts.scss";
 @import "../settings/colors.scss";
-.HomeFourStepsContainer {
-  width: 1900px ;
 
+.HomeFourStepsContainer {
+  width: 1900px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 38px;
+
+  & p {
+    font-size: 3.8rem;
+  }
 }
+
 .HomeFourStepsContainer1 {
   text-align: center;
   margin-top: 50px;
+
+  & img {
+    width: 253px;
+    height: 33px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
-.HomeFourStepsContainer1 img {
-  width: 253px;
-  height: 33px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+
 .HomeFourStepsContainer2 {
   width: 100%;
   background-color: $silver;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &--iconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 73px;
+    margin-bottom: 80px;
+  }
+
+  &--iconContainer:first-of-type {
+    margin-right: 200px;
+  }
+
+  &--iconContainer:nth-of-type(2) {
+    padding-right: 200px;
+  }
+
+  &--iconContainer:nth-of-type(4) {
+    margin-left: 200px;
+  }
+
+  &--iconContainer img {
+    width: 83px;
+    height: 83px;
+    margin-bottom: 10px;
+  }
+
+  &--iconContainer p:first-of-type {
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #707070;
+    width: 85px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &--iconContainer p:nth-of-type(2) {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  &--iconContainer:nth-of-type(3) p:first-of-type {
+    font-size: 1.8rem;
+    text-align: center;
+    width: auto;
+  }
+
 }
-.HomeFourStepsContainer2--iconContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 73px;
-  margin-bottom: 80px;
-}
-.HomeFourStepsContainer2--iconContainer:first-of-type {
-  margin-right: 200px;
-}
-.HomeFourStepsContainer2--iconContainer:nth-of-type(2) {
-  padding-right: 200px;
-}
-.HomeFourStepsContainer2--iconContainer:nth-of-type(4) {
-  margin-left: 200px;
-}
-.HomeFourStepsContainer2--iconContainer img {
-  width: 83px;
-  height: 83px;
-  margin-bottom: 10px;
-}
-.HomeFourStepsContainer2--iconContainer p:first-of-type {
-  font-size: 18px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #707070;
-  width: 85px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.HomeFourStepsContainer2--iconContainer p:nth-of-type(2) {
-  font-size: 16px;
-  text-align: center;
-}
-.HomeFourStepsContainer2--iconContainer:nth-of-type(3) p:first-of-type {
-  font-size: 18px;
-  text-align: center;
-  width: auto;
-}
+
 .HomeFourStepsContainer3 button {
   letter-spacing: 0;
   border: 0.75px solid #3c3c3c;
   width: 310px;
   height: 120px;
-  background-color:white;
+  background-color: white;
   text-align: center;
   cursor: pointer;
   font-size: 36px;
-  font-family: $font-base;  
+  font-family: $font-base;
   color: $black;
   margin-top: 30px;
 }

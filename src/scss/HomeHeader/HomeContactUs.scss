@@ -1,6 +1,7 @@
 @import "../settings/fonts.scss";
 @import "../settings/colors.scss";
-.contactUsMainContainer{
+
+.contactUsMainContainer {
     display: flex;
     justify-content: flex-end;
     max-width: 1900px;
@@ -9,118 +10,131 @@
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.7;
-    margin-top:100px;
+    margin-top: 100px;
 }
-.contactUsMainSection{ 
+
+.contactUsMainSection {
     display: flex;
     flex-direction: column;
-   height: 430px;
-    align-items:center;
+    height: 430px;
+    align-items: center;
     margin-right: 135px;
-    margin-top:150px;
-}
-.contactUsMainSection p{
-    font-size: 38px;
+    margin-top: 150px;
 
-  
+    & p {
+        font-size: 3.8rem;
+    }
+
+    & img {
+        width: 253px;
+        height: 33px;
+        margin-top: 30px;
+    }
+
+    & .uiErrorMessage {
+        color: red;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    & .sentMessage p {
+        color: green;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
 }
-.contactUsMainSection img{
-    width: 253px;
-    height: 33px;
-    margin-top:30px;
-}
-form{
-    width:528px;
+
+form {
+    width: 528px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
+    & span {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    & label {
+        display: flex;
+        flex-direction: column;
+    }
 }
-input{
+
+input {
     outline: 0;
     border-width: 0 0 1px;
-    border-color:$black;
+    border-color: $black;
     text-decoration: none;
     margin-bottom: 5px;
-    margin-top:15px; 
+    margin-top: 15px;
 
 }
-form span{
-    font-size:16px;
-    font-weight: bold;
-}
-form label {
-    display: flex;
-    flex-direction: column;
-}
-.contactUsMainSection .uiErrorMessage{
-    color:red;
-    font-size:12px;
-    font-weight: bold;  
 
-}
-.contactUsMainSection .sentMessage p{
-    color:green;
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom: 30px;
-}
-.errorInputStyle{
+.errorInputStyle {
     border-bottom: 1px solid red;
 
 }
-.fieldContainer{
+
+.fieldContainer {
     height: 62px;
     width: 200px;
-  
+
+    & .fieldContainerMessage {
+        width: 528px;
+        height: 97px;
+        margin-top: 20px;
+    }
+
 }
-.fieldContainerMessage{
-    width: 528px;
-    height: 97px;
-    margin-top:20px;
-}
-.formSubmitContainer{
+
+.formSubmitContainer {
     display: flex;
-    width:100%;
+    width: 100%;
     justify-content: flex-end;
     margin-top: -20px;
 }
-.formSubmitButton{
-    width:150px;
+
+.formSubmitButton {
+    width: 150px;
     height: 50px;
-    background-color:white;
+    background-color: white;
     cursor: pointer;
     border: none;
     font-size: 18px;
     font-family: $font-base;
-    
-    
-}
-.formSubmitButton:hover {
-    width: 150px;
-    height: 50px;
-    border:0.75px solid #3C3C3C;
+
+    & .formSubmitButton:hover {
+        width: 150px;
+        height: 50px;
+        border: 0.75px solid #3C3C3C;
+
+    }
 
 }
-.contactFooter{
+
+.contactFooter {
     display: flex;
 
+    & p {
+        font-size: 18px;
+        position: relative;
+        top: 500px;
+        right: 500px;
+    }
+
 }
-.contactFooter p{
-    font-size: 18px;
+
+.iconsContainer {
     position: relative;
-    top:500px;
-    right:500px;
-}
-.iconsContainer{
-    position: relative;
-    top:500px;
-    right:-150px;
+    top: 500px;
+    right: -150px;
     display: flex;
     justify-content: flex-end;
     width: 80px;
-}
-.iconsContainer img{
-    padding-left: 20px;
 
+    & img {
+        padding-left: 20px;
+    }
 }

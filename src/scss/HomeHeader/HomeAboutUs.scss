@@ -1,12 +1,14 @@
 @import "../settings/fonts.scss";
 @import "../settings/colors.scss";
-.aboutUsMainContainer{
+
+.aboutUsMainContainer {
     display: flex;
     width: 1900px;
     height: 835px;
-    margin-top:80px;
+    margin-top: 80px;
 }
-.aboutUsMainContainerLeftSide{
+
+.aboutUsMainContainerLeftSide {
     width: 958px;
     height: 835px;
     display: flex;
@@ -14,30 +16,34 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color:$silver;
+    background-color: $silver;
+
+    & p:first-of-type {
+        font-size: 3.8rem;
+        margin-bottom: 26px;
+    }
+
+    & p:last-of-type {
+        font-size: 3rem;
+        width: 656.9px;
+        line-height: 45px;
+    }
+
+    & img:first-of-type {
+        width: 253px;
+        height: 33px;
+        margin-bottom: 62px;
+    }
+
+    & img:last-of-type {
+        align-self: flex-end;
+        margin-top: 41px;
+        margin-right: 90px;
+    }
 }
-.aboutUsMainContainerLeftSide p:first-of-type{
-    font-size: 38px;
-    margin-bottom: 26px;
-}
-.aboutUsMainContainerLeftSide img:first-of-type{
-    width: 253px;
-    height: 33px;
-    margin-bottom: 61.9px;
-}
-.aboutUsMainContainerLeftSide p:last-of-type{
-    font-size: 30px;
-    width: 656.9px;
-    line-height: 45px;
-}
-.aboutUsMainContainerLeftSide img:last-of-type {
-    align-self: flex-end;
-    margin-top:41px;
-    margin-right: 90px;
-}
-.aboutUsMainContainerRightSide{
+
+.aboutUsMainContainerRightSide {
     width: 942px;
-   
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../../assets/People.jpg);

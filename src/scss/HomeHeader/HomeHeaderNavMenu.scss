@@ -1,70 +1,79 @@
 @import "../settings/fonts.scss";
 @import "../settings/colors.scss";
+
 .HomeHeader__right--side {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   width: 50%;
   flex-wrap: wrap;
-  padding-right:10px;
-  
+  padding-right: 10px;
+
 }
+
 nav {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
   width: 100%;
-   align-self: start;
-  
-}
-nav div {
-  display: flex;
-  margin-right: 40px;
+  align-self: start;
+
+  &div {
+    display: flex;
+    margin-right: 40px;
+  }
 }
 
 .HomeHeaderLoginButtons button {
-  font-size: 14px;
-   background-color: white;
-  border:0.75px transparent;
-  color: $grey;
-  width:90px;
-  height:36px;
-  cursor:pointer;
-  margin-top:46px;
-  
-}
-.HomeHeaderLoginButtons button:hover{
-  border:  0.75px solid #FAD648 ; 
-}
-.HomeHeaderLinkList ul{
-  display: flex;
-  flex-direction: row;
-  margin-top:20px;
-  
-}
-
-.HomeHeaderLinkList li {
-  font-size: 16px;
+  font-size: 1.4rem;
   background-color: white;
-  border: 3px transparent; 
-  color:$black;
-  padding: 9px;
-  height: 40px;
+  border: 0.75px transparent;
+  color: $grey;
+  width: 90px;
+  height: 36px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 40px;
-  
-}
-.HomeHeaderLinkList li:last-of-type{
-  margin-right:0;
-}
-.HomeHeaderLinkList li:hover{
-  border: 0.75px solid #3C3C3C;
- padding: 9px;
-  height: 40px;
+  margin-top: 46px;
 
+  &:hover {
+    border: 0.75px solid #FAD648;
+  }
+}
+
+.HomeHeaderLinkList {
+  & ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+    & li {
+      font-size: 1.6rem;
+      background-color: white;
+      border: 3px transparent;
+      color: $black;
+      padding: 9px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 40px;
+
+      & a {
+        font-size: 1.6rem;
+      }
+
+    }
+
+    & li:last-of-type {
+      margin-right: 0;
+    }
+
+    & li:hover {
+      border: 0.75px solid #3C3C3C;
+      padding: 9px;
+      height: 40px;
+    }
+  }
 }
 
 .HomeHeaderMiddleText {
@@ -74,39 +83,43 @@ nav div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-}
-.HomeHeaderMiddleText p {
-  font-size: 35px;
-  text-align: center;
-  line-height: 45px;
-}
-.HomeHeaderMiddleText img{
-    width:253px;
+
+  & p {
+    font-size: 35px;
+    text-align: center;
+    line-height: 45px;
+  }
+
+  & img {
+    width: 253px;
     height: 33px;
     margin-top: 25px;
+  }
 }
-.HomeHeaderButtons{
+
+.HomeHeaderButtons {
   margin-left: 35px;
   margin-top: 65px;
   display: flex;
-}
-.HomeHeaderButtons button{
+
+  & button {
     letter-spacing: 0;
     border: 0.75px solid #3c3c3c;
-    width:310px;
+    width: 310px;
     height: 120px;
     background-color: white;
     text-align: center;
     cursor: pointer;
-}
-.HomeHeaderButtons button span{
-  font-size:36px;
-  font-family: $font-base;
-  color:$black;
-}
-.HomeHeaderButtons button:nth-child(2){
-  margin-left:40px;
-  margin-right:35px;
-}
 
+    & span {
+      font-size: 3.6rem;
+      font-family: $font-base;
+      color: $black;
+    }
+  }
+
+  & :nth-child(2) {
+    margin-left: 40px;
+    margin-right: 35px;
+  }
+}

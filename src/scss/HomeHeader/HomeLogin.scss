@@ -1,65 +1,75 @@
 @import "../settings/fonts.scss";
-.HomeHeaderLoginMainContainer{
+
+.HomeHeaderLoginMainContainer {
     display: flex;
     flex-direction: column;
     max-width: 1858px;
     height: 946px;
     align-items: center;
+
+    & p {
+        font-size: 4rem;
+        margin-top: 123px;
+    }
+
+    & img {
+        padding-top: 25px;
+    }
 }
-.HomeHeaderLoginMainContainer p {
-    font-size: 40px;
-    margin-top: 123px;
-}
-.HomeHeaderLoginMainContainer img{
-    padding-top: 25px;
-}
-.HeaderLoginSilverRectangle{
-    margin-top:60px;
+
+.HeaderLoginSilverRectangle {
+    margin-top: 60px;
     width: 385px;
     height: 235px;
     background: #F0F1F1;
     display: flex;
-    
-}
-.HeaderLoginSilverRectangle form{
-    height: 235px;
-    display: flex;
-    justify-content: center;
+
+    & form {
+        height: 235px;
+        display: flex;
+        justify-content: center;
         align-items: center;
+    }
+
+    & input {
+        background: #F0F1F1;
+        width: 250px;
+        border-bottom: 1px solid #707070;
+    }
+
+    & label {
+        display: flex;
+        justify-content: space-evenly;
+        height: 62px;
+
+        & span:nth-of-type(1) {
+            font-size: 1.6rem;
+        }
+    }
 }
-.HeaderLoginSilverRectangle input{
-    background: #F0F1F1;
-    width: 250px;
-    border-bottom: 1px solid #707070;
-}
-.HeaderLoginSilverRectangle label{
-    display: flex;
-   justify-content: space-evenly;
-    height: 62px;
-}
-.HeaderLoginSilverRectangle label span:nth-of-type(1){
-    font-size: 16px;  
-}
-.HeaderLoginButtonsContainer{
-    width:500px;
+
+.HeaderLoginButtonsContainer {
+    width: 500px;
     display: flex;
     justify-content: space-between;
-    margin-top:30px;
-    
-}
-.HeaderLoginButtonsContainer button{
-    font-size: 18px;
-    border: none;
-    background-color: white;
-    font-family: $font-base;
-    border: 0.75px transparent;
-    width: 117px;
-    height: 50px;
-    cursor: pointer;
-}
-.HeaderLoginButtonsContainer button:hover{
-    border:0.75px solid #3C3C3C;
-    margin: top 0 left 0 right 0 bottom 0;
-    width: 117px;
-    height: 50px;
+    margin-top: 30px;
+
+    & button {
+        font-size: 1.8rem;
+        border: none;
+        background-color: white;
+        font-family: $font-base;
+        border: 0.75px transparent;
+        width: 117px;
+        height: 50px;
+        cursor: pointer;
+
+    }
+
+    & button:hover {
+        border: 0.75px solid #3C3C3C;
+        margin: top 0 left 0 right 0 bottom 0;
+        width: 117px;
+        height: 50px;
+    }
 }

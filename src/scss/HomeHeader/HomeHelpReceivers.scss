@@ -11,41 +11,51 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &img {
+        width: 353px;
+        height: 33px;
+        margin-bottom: 62px;
+
+    }
+
+    & a {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        width: 40px;
+        height: 50px;
+    }
 }
 
 .HelpReceiversP1 {
-    font-size: 52px;
+    font-size: 5.2rem;
     margin-bottom: 25px;
-}
-
-.HelpReceiversMainContainer img {
-    width: 353px;
-    height: 33px;
-    margin-bottom: 62px;
-
 }
 
 .HelpReceiversTopContainerButtons {
     display: flex;
     justify-content: center;
 
-}
+    & .TopContainerButtons {
+        font-size: 2.4rem;
+        font-weight: 400;
+        color: $black;
+        width: 300px;
+        height: 79px;
+        padding: 0;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
 
-.TopContainerButtons {
-    font-size: 24px;
-    font-weight: 400;
-    color: $black;
-    width: 300px;
-    height: 79px;
-    padding: 0;
-    text-align: center;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
+    & .TopContainerButtons:hover {
+        border: 0.75px solid #3C3C3C;
+    }
 
-.TopContainerButtons:hover {
-    border: 0.75px solid #3C3C3C;
 }
 
 .HelpReceiversText {
@@ -59,35 +69,35 @@
 .HelpReceiversList {
     margin-top: 66px;
     text-decoration: none;
-}
 
-.HelpReceiversList li {
-    width: 1344px;
-    margin-bottom: 80px;
-    display: flex;
-    text-decoration: none;
-    justify-content: space-between;
-    align-items: center;
-}
+    & li {
+        width: 1344px;
+        margin-bottom: 80px;
+        display: flex;
+        text-decoration: none;
+        justify-content: space-between;
+        align-items: center;
 
-.HelpReceiversList li p:first-of-type {
-    font-size: 26px;
-    font-family: $font-alt;
-    color: $black;
-    text-align: start;
-}
+        & .HelpReceiversGoal {
+            font-size: 1.8rem;
+            font-family: $font-base;
+            color: $black;
+            align-self: flex-start;
+        }
 
-.HelpReceiversGoal {
-    font-size: 18px;
-    font-family: $font-base;
-    color: $black;
-    align-self: flex-start;
-}
+        & .HelpReceiversItems {
+            font-size: 1.8rem;
+            font-family: $font-alt;
+            color: $black;
+        }
+    }
 
-.HelpReceiversItems {
-    font-size: 18px;
-    font-family: $font-alt;
-    color: $black;
+    & li p:first-of-type {
+        font-size: 2.6rem;
+        font-family: $font-alt;
+        color: $black;
+        text-align: start;
+    }
 }
 
 .paginationBttns {
@@ -97,27 +107,14 @@
     left: 540px;
     top: -60px;
 
+    & .previousBttn,
+    .nextBttn {
+        cursor: pointer;
+    }
 
-}
-
-.previousBttn,
-.nextBttn {
-    cursor: pointer;
-
-}
-
-.HelpReceiversMainContainer a {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    width: 40px;
-    height: 50px;
-}
-
-.paginationActive a:hover,
-.paginationBttns li:nth-of-type(3)>a:hover,
-.paginationBttns li:nth-of-type(4)>a:hover {
-    border: #707070 solid 1px;
+    & .paginationActive a:hover,
+    .paginationBttns li:nth-of-type(3)>a:hover,
+    .paginationBttns li:nth-of-type(4)>a:hover {
+        border: #707070 solid 1px;
+    }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-scroll/modules";
-import "../../scss/HomeHeader/HomeHeaderNavMenu.scss";
+import "../../scss/HeaderNavMenu.scss";
 import decoration from "../../assets/Decoration.svg";
 import { useNavigate } from "react-router-dom";
 export const HomeHeaderRightSide = () => {

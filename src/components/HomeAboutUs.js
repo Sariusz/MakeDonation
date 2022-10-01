@@ -1,7 +1,7 @@
 import React from "react";
 import decoration from "../assets/Decoration.svg";
 import signature from "../assets/Signature.svg";
-import "../scss/HomeHeader/HomeAboutUs.scss";
+import "../scss/AboutUs.scss";
 function HomeAboutUs() {
   return (
     <div className="aboutUsMainContainer" id="aboutUs">

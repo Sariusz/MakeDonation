@@ -1,6 +1,7 @@
 import React from "react";
 import ReactPaginate from "react-paginate";
 import { useState } from "react";
+
 function HomePaginateCharity() {
   // logic for charities' paginations
   const charityArray = [];

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll/modules";
 import logo from "../assets/Decoration.svg";
-import "../scss/HomeHeader/HomeLogin.scss";
+import "../scss/Login.scss";
 import { useNavigate } from "react-router-dom";
 export const Login = () => {
   const [setClick] = useState(false);

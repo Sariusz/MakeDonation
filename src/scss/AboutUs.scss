@@ -1,5 +1,5 @@
-@import "../settings/fonts.scss";
-@import "../settings/colors.scss";
+@import "settings/fonts.scss";
+@import "settings/colors.scss";
 
 .aboutUsMainContainer {
     display: flex;
@@ -46,5 +46,5 @@
     width: 942px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../../assets/People.jpg);
+    background-image: url(../assets/People.jpg);
 }

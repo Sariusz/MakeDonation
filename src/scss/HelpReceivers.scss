@@ -1,5 +1,5 @@
-@import "../settings/fonts.scss";
-@import "../settings/colors.scss";
+@import "settings/fonts.scss";
+@import "settings/colors.scss";
 
 .HelpReceiversMainContainer {
     margin-top: 20px;
@@ -50,10 +50,10 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
-    }
 
-    & .TopContainerButtons:hover {
-        border: 0.75px solid #3C3C3C;
+        &:hover {
+            border: 0.75px solid #3C3C3C;
+        }
     }
 
 }

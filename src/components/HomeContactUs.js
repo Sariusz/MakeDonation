@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import decoration from "../assets/Decoration.svg";
 import facebook from "../assets/Facebook.svg";
 import instagram from "../assets/Instagram.svg";
-import "../scss/HomeHeader/HomeContactUs.scss";
+import "../scss/ContactUs.scss";
 
 function HomeContactUs() {
   const url = "https://fer-api.coderslab.pl/v1/portfolio/contact";

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../scss/HomeHeader/HomeHeader.scss";
+import "../../scss/Header.scss";
 import { HomeHeaderRightSide } from "./HomeHeaderRightSide";
 import { HomeHeaderLeftSide } from "./HomeHeaderLeftSide";
 

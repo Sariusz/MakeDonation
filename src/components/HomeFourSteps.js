@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/HomeHeader/HomeFourSteps.scss";
+import "../scss/FourSteps.scss";
 import decoration from "../assets/Decoration.svg";
 import icon from "../assets/Icon.png";
 import icon1 from "../assets/Icon1.png";

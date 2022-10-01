@@ -1,4 +1,4 @@
-@import "../settings/fonts.scss";
+@import "settings/fonts.scss";
 
 .HomeHeaderLoginMainContainer {
     display: flex;
@@ -64,12 +64,14 @@
         height: 50px;
         cursor: pointer;
 
+        &:hover {
+            border: 0.75px solid #3C3C3C;
+            margin: top 0 left 0 right 0 bottom 0;
+            width: 117px;
+            height: 50px;
+        }
+
     }
 
-    & button:hover {
-        border: 0.75px solid #3C3C3C;
-        margin: top 0 left 0 right 0 bottom 0;
-        width: 117px;
-        height: 50px;
-    }
+
 }

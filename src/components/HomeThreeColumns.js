@@ -1,5 +1,6 @@
 import React from "react";
-import "../scss/HomeHeader/HomeThreeColumns.scss";
+import "../scss/ThreeColumns.scss";
+
 function HomeThreeColumns() {
   return (
     <div className="homeThreeColumnsContainer">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../scss/HomeHeader/HomeHelpReceivers.scss";
+import "../scss/HelpReceivers.scss";
 import decoration from "../assets/Decoration.svg";
 import HomePaginateCharity from "./HomePaginateCharity";
 import HomePaginateOrganizations from "./HomePaginateOrganizations";

@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-scroll/modules";
-import "../../scss/HeaderNavMenu.scss";
-import decoration from "../../assets/Decoration.svg";
+import "../scss/HeaderNavMenu.scss";
+import decoration from "../assets/Decoration.svg";
 import { useNavigate } from "react-router-dom";
 export const HomeHeaderRightSide = () => {
   let navigate = useNavigate();

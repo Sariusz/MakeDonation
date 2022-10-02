@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../scss/HelpReceivers.scss";
 import decoration from "../assets/Decoration.svg";
-import HomePaginateCharity from "./HomePaginateCharity";
-import HomePaginateOrganizations from "./HomePaginateOrganizations";
-import HomePaginateLocalDonations from "./HomePaginateLocalDonations";
+import HomePaginateCharity from "./PaginateCharity";
+import HomePaginateOrganizations from "./PaginateOrganizations";
+import HomePaginateLocalDonations from "./PaginateLocalDonations";
 function HomeHelpReceivers() {
   //state & logic for buttons to conditionally render a certain component
   const [selectedButton, setSelectedButton] = useState(null);

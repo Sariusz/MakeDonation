@@ -1,10 +1,10 @@
 import React from "react";
-import { HomeHeader } from "./HomeHeader/HomeHeader";
-import HomeFourSteps from "./HomeFourSteps";
-import HomeAboutUs from "./HomeAboutUs";
-import HomeHelpReceivers from "./HomeHelpReceivers";
-import HomeContactUs from "./HomeContactUs";
-import HomeThreeColumns from "./HomeThreeColumns";
+import { HomeHeader } from "./Header";
+import HomeFourSteps from "./FourSteps";
+import HomeAboutUs from "./AboutUs";
+import HomeHelpReceivers from "./HelpReceivers";
+import HomeContactUs from "./ContactUs";
+import HomeThreeColumns from "./ThreeColumns";
 
 export const Home = () => {
   return (

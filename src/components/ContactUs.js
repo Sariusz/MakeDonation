@@ -11,7 +11,8 @@ function HomeContactUs() {
   const [message, setMessage] = useState("");
   const [sentMessage, setSentMessage] = useState("");
   const [formErrors, setFormErrors] = useState({});
-  const [setIsSubmit] = useState(false);
+  const [isSubmit, setIsSubmit] = useState(true);
+
   const validate = () => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -33,12 +34,12 @@ function HomeContactUs() {
     return errors;
   };
 
-  let handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(name, email, message));
     setIsSubmit(true);
     try {
-      let res = fetch(url, {
+      const res = fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -49,14 +50,16 @@ function HomeContactUs() {
           message: message,
         }),
       });
-
-      if (res.status === 200) {
+      
+      if (res.status !== 400) {
         setName("");
         setEmail("");
         setMessage("");
         setSentMessage(`Wiadomość została wysłana! Wkrótce się skontaktujemy.`);
+      
       } else {
         setSentMessage("");
+        
       }
     } catch (err) {
       console.log(err);
@@ -123,11 +126,7 @@ function HomeContactUs() {
           </div>
 
           <div className="formSubmitContainer">
-            <button
-              type="submit"
-              formNoValidate="formnovalidate"
-              className="formSubmitButton"
-            >
+            <button type="submit" className="formSubmitButton">
               Wyślij
             </button>
           </div>

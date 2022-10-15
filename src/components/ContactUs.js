@@ -11,7 +11,6 @@ function HomeContactUs() {
   const [message, setMessage] = useState("");
   const [sentMessage, setSentMessage] = useState("");
   const [formErrors, setFormErrors] = useState({});
-  const [isSubmit, setIsSubmit] = useState(true);
 
   const validate = () => {
     const errors = {};
@@ -37,8 +36,6 @@ function HomeContactUs() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(name, email, message));
-    setIsSubmit(true);
-    try {
       const res = fetch(url, {
         method: "POST",
         headers: {
@@ -51,7 +48,8 @@ function HomeContactUs() {
         }),
       });
       
-      if (res.status !== 400) {
+    if (res.status !== 400) {
+        console.log(res.status)
         setName("");
         setEmail("");
         setMessage("");
@@ -61,9 +59,7 @@ function HomeContactUs() {
         setSentMessage("");
         
       }
-    } catch (err) {
-      console.log(err);
-    }
+   
   };
 
   return (
@@ -126,7 +122,7 @@ function HomeContactUs() {
           </div>
 
           <div className="formSubmitContainer">
-            <button type="submit" className="formSubmitButton">
+            <button type="submit" className="formSubmitButton" formNoValidate>
               Wyślij
             </button>
           </div>
